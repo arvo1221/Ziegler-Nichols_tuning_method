@@ -3,7 +3,7 @@ PID Control Simulation for 2-DOF Robot Manipulator
 
 <img src="https://user-images.githubusercontent.com/54099930/109504364-d207ff80-7ade-11eb-95ac-ff875979cc07.jpg" width="450">
 
-![opi](https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif)
+<img src="https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif" width="470">
 
 ## 2-Link Robot Arm Dynamics(RR)
 Lagrangian mechanics를 사용하여 Manipulator Dynamics를 풀이한다.
@@ -48,7 +48,7 @@ Ki와 Kd를 0으로 설정한 뒤 P Gain을 조절하며 출력이 일정하게 
 Ku는 1050으로 선정한다. 이 때 Tu = 1.99-1.77 = 0.22
 따라서 Kp = 630 Ki = 0.11 Kd = 0.0275로 선정할 수 있다. 이 때 Joint의 Desired Angle을 pi/6으로 설정하면
 
-<img src="https://user-images.githubusercontent.com/54099930/109512677-b0f7dc80-7ae7-11eb-82de-5c9c3d62a8db.jpg" width="480">
+<img src="https://user-images.githubusercontent.com/54099930/109512677-b0f7dc80-7ae7-11eb-82de-5c9c3d62a8db.jpg" width="380">
 
 진동하는 모습을 확인할 수 있다. 다시 말해 Z-N tuning method로 gain 선정에 실패했음을 알 수 있다.
 
@@ -69,3 +69,4 @@ Kp = 315 , Ki = 84.0829, Kd = 17.9 를 사용하면
 <img src="https://user-images.githubusercontent.com/54099930/109515869-ebaf4400-7aea-11eb-9265-e250ab17036d.gif" width="450">
 <img src="https://user-images.githubusercontent.com/54099930/109516010-10a3b700-7aeb-11eb-8aaa-8533fc6cabac.jpg" width="660">
 
+제어기에 적분기가 존재하므로 타입이 최소한 1 이상임을 알 수 있는데 desired q1 = 0 desired q2 = pi/2에서 중력이 시스템에 작용하여도 정상상태오차 없이 목표 값에 수렴하는 것을 보아 이 시스템은 unit step function 외란에도 오차 없이 stable한 모습을 보이며 시스템 타입이 0이 아님을 검증할 수 있었다.
