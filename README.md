@@ -6,9 +6,11 @@ PID Control Simulation for 2-DOF Robot Manipulator
 ## 2-Link Robot Arm Dynamics(RR)
 Lagrangian mechanics를 사용하여 Manipulator Dynamics를 풀이한다.
 각 Joint의 위치를 (x1,y1), (x2,y2)로 정의하고 이를 데카르트 좌표계로 나타내면
+
 <img src="https://user-images.githubusercontent.com/54099930/109504886-62464480-7adf-11eb-8155-3a57728ed130.jpg" width="480">
 
 Kinetic Energy 와 Potential Energy를 구한 뒤 Lagrangian을 풀이하면
+
 <img src="https://user-images.githubusercontent.com/54099930/109505738-44c5aa80-7ae0-11eb-9d0f-a9135214a228.jpg" width="850">
 
 위와 같이 나타낼 수 있다. 이 때 H는 Inertia C는 Coriolis G는 중력에 대한 텀이다.
