@@ -1,7 +1,7 @@
 # Ziegler-Nichols_tuning_method
 PID Control Simulation for 2-DOF Robot Manipulator 
 
-<img src="https://user-images.githubusercontent.com/54099930/109504364-d207ff80-7ade-11eb-95ac-ff875979cc07.jpg" width="550">
+<img src="https://user-images.githubusercontent.com/54099930/109504364-d207ff80-7ade-11eb-95ac-ff875979cc07.jpg" width="450">
 
 ![opi](https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif)
 
@@ -32,7 +32,7 @@ step response를 사용하는 방법으로, 적분기가 없고, stable한 syste
 
 2-DOF Robot Manipulator에 적용해보면
 
-<img src="https://user-images.githubusercontent.com/54099930/109509531-53ae5c00-7ae4-11eb-8aea-a0826877c892.jpg" width="580">
+<img src="https://user-images.githubusercontent.com/54099930/109509531-53ae5c00-7ae4-11eb-8aea-a0826877c892.jpg" width="440">
 
 수렴하지 못하는 모습을 확인할 수 있다. 따라서 위의 방법으로는 제어기의 gain을 구할 수 없다.
 
@@ -42,13 +42,13 @@ Ki와 Kd를 0으로 설정한 뒤 P Gain을 조절하며 출력이 일정하게 
 
 2-DOF Robot Manipulator에 적용해보면
 
-<img src="https://user-images.githubusercontent.com/54099930/109511962-f2d45300-7ae6-11eb-96f8-1c7621a65250.jpg" width="580">
-<img src="https://user-images.githubusercontent.com/54099930/109512055-097aaa00-7ae7-11eb-8e00-cf389a3031d9.jpg" width="580">
+<img src="https://user-images.githubusercontent.com/54099930/109511962-f2d45300-7ae6-11eb-96f8-1c7621a65250.jpg" width="480">
+<img src="https://user-images.githubusercontent.com/54099930/109512055-097aaa00-7ae7-11eb-8e00-cf389a3031d9.jpg" width="480">
 
 Ku는 1050으로 선정한다. 이 때 Tu = 1.99-1.77 = 0.22
 따라서 Kp = 630 Ki = 0.11 Kd = 0.0275로 선정할 수 있다. 이 때 Joint의 Desired Angle을 pi/6으로 설정하면
 
-<img src="https://user-images.githubusercontent.com/54099930/109512677-b0f7dc80-7ae7-11eb-82de-5c9c3d62a8db.jpg" width="580">
+<img src="https://user-images.githubusercontent.com/54099930/109512677-b0f7dc80-7ae7-11eb-82de-5c9c3d62a8db.jpg" width="480">
 
 진동하는 모습을 확인할 수 있다. 다시 말해 Z-N tuning method로 gain 선정에 실패했음을 알 수 있다.
 
@@ -61,11 +61,11 @@ Kp = 315 , Ki = 84.0829, Kd = 17.9 를 사용하면
 
 1) desired q1 = 0 desired q2 = pi/2
 
-<img src="https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif" width="600">
+<img src="https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif" width="450">
 <img src="https://user-images.githubusercontent.com/54099930/109515920-fa95f680-7aea-11eb-9445-aaea48f4aeac.jpg" width="660">
 
 2) desired q1,q2 = -0.05pisin(0.75pi*t)
 
-<img src="https://user-images.githubusercontent.com/54099930/109515869-ebaf4400-7aea-11eb-9265-e250ab17036d.gif" width="600">
+<img src="https://user-images.githubusercontent.com/54099930/109515869-ebaf4400-7aea-11eb-9265-e250ab17036d.gif" width="450">
 <img src="https://user-images.githubusercontent.com/54099930/109516010-10a3b700-7aeb-11eb-8aaa-8533fc6cabac.jpg" width="660">
 
