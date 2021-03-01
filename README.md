@@ -2,8 +2,8 @@
 PID Control Simulation for 2-DOF Robot Manipulator 
 
 <img src="https://user-images.githubusercontent.com/54099930/109504364-d207ff80-7ade-11eb-95ac-ff875979cc07.jpg" width="550">
-![opi](https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif)
 
+![opi](https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif)
 
 ## 2-Link Robot Arm Dynamics(RR)
 Lagrangian mechanics를 사용하여 Manipulator Dynamics를 풀이한다.
@@ -61,11 +61,11 @@ Kp = 315 , Ki = 84.0829, Kd = 17.9 를 사용하면
 
 1) desired q1 = 0 desired q2 = pi/2
 
-![opi](https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif)
-<img src="https://user-images.githubusercontent.com/54099930/109515920-fa95f680-7aea-11eb-9445-aaea48f4aeac.jpg" width="580">
+<img src="https://user-images.githubusercontent.com/54099930/109515807-db976480-7aea-11eb-8f8a-24683b5d026e.gif" width="600">
+<img src="https://user-images.githubusercontent.com/54099930/109515920-fa95f680-7aea-11eb-9445-aaea48f4aeac.jpg" width="660">
 
 2) desired q1,q2 = -0.05pisin(0.75pi*t)
 
-![sine](https://user-images.githubusercontent.com/54099930/109515869-ebaf4400-7aea-11eb-9265-e250ab17036d.gif)
-<img src="https://user-images.githubusercontent.com/54099930/109516010-10a3b700-7aeb-11eb-8aaa-8533fc6cabac.jpg" width="580">
+<img src="https://user-images.githubusercontent.com/54099930/109515869-ebaf4400-7aea-11eb-9265-e250ab17036d.gif" width="600">
+<img src="https://user-images.githubusercontent.com/54099930/109516010-10a3b700-7aeb-11eb-8aaa-8533fc6cabac.jpg" width="660">
 
